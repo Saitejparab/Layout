@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>The Extreme Leadership</title>
+    <style>
+       
+
+        .custom-navbar {
+            height: 10%;
+        }
+        .logo {
+            max-width: 180px;   
+        }
+        .navbar-toggler-icon {
+            background-color: lightblue;
+        }
+      .empty-space{
+        background-color: brown;
+      }
+      .meeting{
+        margin-left: 0;
+        min-width:300px;
+        overflow-x: hidden;
+      }
+      .navbar-nav{
+        align-content: end;
+      }
+      .first>img {
+        position: relative;
+      }
+      .first>p { 
+        position: absolute;
+        margin-top: 15%;
+
+      }
+      .meeting-text{
+        margin-left: 2% ;
+      }
+      .first>H2 {
+        position: absolute;
+        margin-top: 20%;
+
+      }
+      .first>p {
+        
+        color: white;
+        font-size: 50%;
+      }
+      .first>h2 {
+        color: white;
+        font-size:100%;
+      }
+      .second{
+     
+        text-align: center;
+        margin-top: 5%;
+       
+      }
+      .third{
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+
+      @media screen and (min-width: 540px) and (max-width: 780px) {
+    .view {
+        width: 600px;
+    }
+    .first>p {
+        
+        color: white;
+        font-size: 80%;
+      }
+      .first>h2 {
+        color: white;
+        font-size: 190%;
+      }
+}
+@media screen and (min-width: 780px) and (max-width: 4000px) {
+  
+    .first>p {
+        
+        color: white;
+        font-size: 110%;
+      }
+      .first>h2 {
+        color: white;
+        font-size: 250%;
+      }
+}
+.lastimage{
+  width: 100%;
+  margin-left: 0%;
+  height: 120%;
+}
+.lastimage1{
+  position: absolute;
+}
+.textoverimage{
+  
+  position: relative;
+  align-items: center;
+  color: aliceblue;
+  
+}
+
+
+        /* Hide the words when the screen width is less than 600px */
+        @media (max-width: 1030px) {
+            .hidden-word {
+                display: none; /* Hide when the screen is 600px or smaller */
+            }
+        }
+        
+        /* Show the words again when the screen width is 660px or larger */
+        @media (min-width: 1031px) {
+            .hidden-word {
+                display: inline; /* Show when the screen is 661px or larger */
+            }
+        }
+        @media (max-width: 755px) {
+           .textoverimage{
+            color: black;
+           }
+        }
+        @media (max-width: 509px) {
+           .hideb{
+            display: none;
+           }
+        }
+    </style>
+</head>
+<body>
+<div class="empty-space">
+<br>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" class="logo navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-info btn-sm" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="card first">
+   
+        <img class="meeting-index" src="meeting-index.jpeg" alt="">
+        <p class="meeting-text">LEADERSHIP DEVELOPMENT & TRAINING</p>
+        <h2 class="meeting-text">EXTREME LEADERS AWARD WINNING CULTURES REDICAL RESULTS</h2>
+</div>
+<div class="container second">
+        <h5>AWARD-WINNING CULTURE CONSULTING</h5>
+        <h2>WE’LL BREATHE NEW LIFE INTO YOUR WORKPLACE.</h2>
+        <p>Founded by leadership pioneer and best-selling author Steve Farber, The Extreme Leadership Institute helps organizations realize their potential by using radical culture tranformation tactics rooted in passion, support, and most importantly—love. We help bright professionals grow into more productive, enthusiastic, and insightful leaders. The result? Increased engagement that transforms company cultures and supercharges profitability.</p>
+        <img src="books.png" alt="books " class="second-image img-fluid">
+    </div>
+<div class="container third">
+  <div class="gallery-images row">
+    <img class="col-2" alt="imagesforgallery" src="img1.jpg">
+    <img class="col-2" alt="imagesforgallery" src="img2.jpg">
+    <img class="col-2" alt="imagesforgallery" src="img4.jpg">
+    <img class="col-2" alt="imagesforgallery" src="img3.jpg">
+    <img class="col-2" alt="imagesforgallery" src="img6.jpg">
+    <img class="col-2" alt="imagesforgallery" src="img5.jpg">
+   
+  </div>
+
+</div>
+<div class="last " style="">
+  <div class="lastimage1">
+    <img class="lastimage" style="height: 110%;" src="lastback.jpeg">
+  </div>
+  <div class="textoverimage container">
+    <div class="container-fluid">
+
+      <div class="row" style="">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12" style="margin-top: 15%;">
+              MANAGEMENT TRAINING
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+            <b> <h3 class="hideb"> READY TO RADICALLY CHANGE YOUR COMPANY’S CULTURE? </h3> </b>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="hidden-word" style="font-size: 60;">
+              Do your organization’s leaders see company challenges as an opportunity or an obligation?  
+              Do they show up to work excited to make a positive impact in the lives of the people they lead? 
+                <br>
+             We help excellent organizations nurture high-performing, supportive environments that foster more bottom-line results 
+            and beyond bottom-line enthusiasm and engagement.
+          </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" style="margin-top: 5%;">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U-2SZuEnhTI?si=DNnqkvU0jXpBJVTl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
