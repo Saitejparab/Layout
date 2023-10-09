@@ -134,26 +134,40 @@
             display: none;
            }
         }
+        #spinner{
+          align-content: center;
+          margin-top: auto;
+          margin-bottom: auto;
+          position: relative; 
+        }
     </style>
+    <script>
+      // Show the spinner and hide the main content when the page starts loading
+      window.addEventListener("load", function () {
+          var spinner = document.getElementById("spinner");
+          var mainContent = document.getElementById("main-content");
+          
+          spinner.style.display = "none";
+          mainContent.style.display = "block";
+      });
+  
+      // Hide the spinner and show the main content when the page finishes loading
+      window.addEventListener("DOMContentLoaded", function () {
+          var spinner = document.getElementById("spinner");
+          var mainContent = document.getElementById("main-content");
+          
+          spinner.style.display = "block";
+          mainContent.style.display = "none";
+      });
+  </script>
+  
+  
 </head>
 <body>
-    <div class="spinner-border spinner text-primary" id="spinner" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-    <script>
-      // Function to hide the spinner and body when the page is loading
-      function hideSpinnerAndBody() {
-          const spinner = document.getElementById("spinner");
-          const body = document.getElementById("bodyy");
-
-          spinner.style.display = "none";
-          body.style.display = "none";
-      }
-
-      // Attach the event listener to the window's load event
-      window.addEventListener("load", hideSpinnerAndBody);
-  </script>
-    <div class="bodyy">
+  <div id="spinner" class="spinner-border text-primary" role="status" style="display: none;">
+    <span class="sr-only">Loading...</span>
+</div>
+<div id="main-content">
 <div class="empty-space">
 <br>
 </div>
@@ -250,6 +264,5 @@
     </div>
   </div>
 </div>
-        </div>
 </body>
 </html>
